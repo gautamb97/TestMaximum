@@ -12,7 +12,7 @@ public class Maximum {
         printMaxInteger(x, y, z, max);
         return max;
     }
-    public static Float maxInteger(Float x, Float y, Float z){
+    public static Float maxFloat(Float x, Float y, Float z){
         Float max = x;
         if(y.compareTo(max) > 0){
             max = y;

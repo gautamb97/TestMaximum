@@ -25,7 +25,13 @@ public class MaximumTest {
     @Test
     public void givenFloat_WhenFirstFloat_IsMaxShouldReturnMax(){
         Maximum maximum = new Maximum();
-        float maximumInteger = maximum.maxInteger(9.1f,5.1f,2.1f);
-        Assert.assertEquals(9.1f, maximumInteger,0.0f);
+        float maximumFloat = maximum.maxFloat(9.1f,5.1f,2.1f);
+        Assert.assertEquals(9.1f, maximumFloat,0.0f);
+    }
+    @Test
+    public void givenFloat_WhenSecondFloat_IsMaxShouldReturnMax(){
+        Maximum maximum = new Maximum();
+        float maximumFloat = maximum.maxFloat(5.1f,9.1f,2.1f);
+        Assert.assertEquals(9.1f, maximumFloat,0.0f);
     }
 }
