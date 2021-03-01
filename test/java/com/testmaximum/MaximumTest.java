@@ -40,4 +40,9 @@ public class MaximumTest {
         String maximumString = maximum.maxString("Pizza","Burger", "Noodles");
         Assert.assertEquals("Pizza", maximumString);
     }
+    @Test
+    public void givenString_WhenSecondString_IsMaxShouldReturnMax(){
+        String maximumString = maximum.maxString("Burger","Pizza", "Noodles");
+        Assert.assertEquals("Pizza", maximumString);
+    }
 }
