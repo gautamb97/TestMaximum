@@ -16,4 +16,10 @@ public class MaximumTest {
         int maximumInteger = maximum.maxInteger(5,9,2);
         Assert.assertEquals(9, maximumInteger);
     }
+    @Test
+    public void givenInteger_WhenThirdInteger_IsMaxShouldReturnMax(){
+        Maximum maximum = new Maximum();
+        int maximumInteger = maximum.maxInteger(5,2,9);
+        Assert.assertEquals(9, maximumInteger);
+    }
 }
