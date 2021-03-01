@@ -22,4 +22,10 @@ public class MaximumTest {
         int maximumInteger = maximum.maxInteger(5,2,9);
         Assert.assertEquals(9, maximumInteger);
     }
+    @Test
+    public void givenFloat_WhenFirstFloat_IsMaxShouldReturnMax(){
+        Maximum maximum = new Maximum();
+        float maximumInteger = maximum.maxInteger(9.1f,5.1f,2.1f);
+        Assert.assertEquals(9.1f, maximumInteger,0.0f);
+    }
 }
